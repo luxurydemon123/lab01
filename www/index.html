@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
+    
+
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+    <title>Hello World</title>
+</head>
+
+<body>
+    
+    <div class="main">
+        <form action="" class="form" id="form-1">
+            <div class="form-group">
+                <label for="firstname" class="form-label">First Name:</label> 
+                <input id="firstname" name="firname" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="last_name" class="form-label">Last Name:</label>
+                <input id="last_name" name="lstname" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="title" class="form-label">Title:</label>
+                <div class="title">
+                    <div class="check-box">
+                        <input name="title" value="Mr" type="radio" class="form-control"> Mr
+                    </div>
+                    <div class="check-box">
+                        <input name="title" value="Mrs" type="radio" class="form-control"> Mrs
+                    </div>
+                    <div class="check-box">
+                        <input name="title" value="Miss" type="radio" class="form-control"> Miss
+                    </div>
+                    <div class="check-box">
+                        <input name="title" value="Ms" type="radio" class="form-control"> Ms
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="birthday" class="form-label">Birth Day:</label>
+                    <input type="date" id="birthday" name="birthday">
+                    <!-- <div class="birth_day">
+                        <form action="/action_page.php">
+                            
+                            <input type="date" id="birthday" name="birthday">
+                            
+                          </form>
+                        <!-- <input id="day" name="birday" type="text" class="form-control">
+                        <input id="month" name="birday" type="text" class="form-control">
+                        <input id="year" name="birday" type="text" class="form-control"> -->
+                    </div> 
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email address:</label>
+                    <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="phone" class="form-label">Phone number:</label>
+                    <input id="phone" name="phonenumber" type="text" class="form-control">
+                </div>
+                <button class="form-submit">Submit</button>
+        </form>
+        
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
